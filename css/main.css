@@ -97,6 +97,10 @@ legend {
   --third-family: "Akzidenz-Grotesk Pro", sans-serif;
   --font3: "Inter", sans-serif;
   --font4: "Graphik LC", sans-serif;
+  --color-white: #ffffff;
+  --color-main: #262633;
+  --color-second: #797986;
+  --bgc-btn-main: #BF2738;
 }
 
 .container {
@@ -105,4 +109,108 @@ legend {
   padding: 0 29px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.header {
+  padding-top: 13px;
+  padding-bottom: 15px;
+}
+
+.header__content {
+  display: grid;
+  grid-template-columns: 5fr 2fr 5fr;
+}
+
+.header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 59px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__mobile-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+.header__logo {
+  justify-self: center;
+}
+
+.header__option {
+  justify-self: end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 58px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 23px;
+}
+
+.header__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 6px;
+}
+
+.header__number-link {
+  font-family: var(--font-family);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18px;
+  color: var(--color-main);
+}
+
+.header__email-link {
+  font-family: var(--font4);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 15.6px;
+  color: var(--color-second);
+}
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 46px;
+}
+
+.nav__link {
+  font-family: var(--font-family);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  color: var(--color-main);
+}
+
+.btn-feedback {
+  padding: 19px 28px;
+  color: var(--color-white);
+  background-color: var(--bgc-btn-main);
+  border-radius: 14px;
+  font-family: var(--second-family);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
 }/*# sourceMappingURL=main.css.map */
