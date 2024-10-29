@@ -101,6 +101,8 @@ legend {
   --color-main: #262633;
   --color-second: #797986;
   --bgc-btn-main: #BF2738;
+  --bgc-btn-gray1: #F5F5F5;
+  --bgc-line: #EAEAEA;
 }
 
 .container {
@@ -189,6 +191,32 @@ legend {
   color: var(--color-second);
 }
 
+.page-name__content {
+  padding-top: 21px;
+  padding-bottom: 30px;
+  text-align: center;
+  background-color: var(--bgc-btn-gray1);
+}
+
+.page-name__route {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 17px;
+}
+
+.page-name__line {
+  height: 1px;
+  background-color: var(--bgc-line);
+}
+
+.page-name__title {
+  margin-top: 15px;
+}
+
 .nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -213,4 +241,18 @@ legend {
   font-size: 14px;
   font-weight: 400;
   line-height: 14px;
+}
+
+.page-title {
+  font-family: var(--second-family);
+  font-size: 46px;
+  font-weight: 400;
+  line-height: 46px;
+  color: var(--color-main);
+}
+
+.route {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }/*# sourceMappingURL=main.css.map */
