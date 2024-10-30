@@ -1,5 +1,30 @@
 .route {
+    list-style-type: disc;
     display: flex;
+    gap: 25px;
+    font-family: var(--font-family);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.4px;
+
+    li span {
+        color: var(--color-main);
+    }
+
+    li:nth-child(1) {
+        list-style-type: none;
+    }
+
+    li::marker {
+        color: var(--color-second);
+    }
+
+    li:last-child span {
+        color: var(--color-second);
+
+    }
+    
 }
+
 .route__link {
 }
