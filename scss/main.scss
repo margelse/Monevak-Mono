@@ -6,9 +6,11 @@
 // Blocks
 @import "blocks/header";
 @import "blocks/page-name";
+@import "blocks/info";
 
 // Sections
 @import "sections/nav";
 @import "sections/button";
-@import "sections/page-title";
+@import "sections/title";
 @import "sections/route";
+@import "sections/info-form";

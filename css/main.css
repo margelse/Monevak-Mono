@@ -100,9 +100,14 @@ legend {
   --color-white: #ffffff;
   --color-main: #262633;
   --color-second: #797986;
+  --color-subtitle: #808080;
   --bgc-btn-main: #BF2738;
   --bgc-btn-gray1: #F5F5F5;
   --bgc-line: #EAEAEA;
+}
+
+body {
+  color: var(--color-main);
 }
 
 .container {
@@ -217,6 +222,52 @@ legend {
   margin-top: 15px;
 }
 
+.info {
+  margin-top: 62px;
+}
+
+.info__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.info__text a {
+  color: var(--color-main);
+}
+
+.info__mail {
+  font-family: var(--font-family);
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.info__mail a {
+  color: var(--bgc-btn-main);
+}
+
+.info__text-title {
+  font-family: var(--font-family);
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18.7px;
+}
+
+.info__text-subtitle {
+  font-family: var(--font-family);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 19.5px;
+  color: var(--color-subtitle);
+}
+
+.info__form-title {
+  margin-bottom: 20px;
+}
+
 .nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -251,6 +302,13 @@ legend {
   color: var(--color-main);
 }
 
+.section-title {
+  font-family: var(--second-family);
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 39.6px;
+}
+
 .route {
   list-style-type: disc;
   display: -webkit-box;
@@ -273,4 +331,22 @@ legend {
 }
 .route li:last-child span {
   color: var(--color-second);
+}
+
+.form__input-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  margin-bottom: 28px;
+}
+
+.form__item {
+  width: 100%;
+}
+
+.form__input {
+  padding-left: 20px;
+  padding-top: 17px;
+  padding-bottom: 11px;
 }/*# sourceMappingURL=main.css.map */
