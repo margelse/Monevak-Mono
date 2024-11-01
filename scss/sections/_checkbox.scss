@@ -15,18 +15,7 @@
     background-color: var(--bgc-btn-gray1);
     border-radius: 4px;
 
-    &::before {
-        content: '';
-        width: 10px;
-        height: 8px;
-        background-image: url("../image/contacts-icon/vector.svg");
-        position: absolute;
-        top: 50%;
-        left: 50%;
-
-        transform: translate(-50%, -50%);
-        opacity: 0;
-    }
+    margin-right: 16px;
 }
 .checkbox__text {
     font-family: var(--font-family);
@@ -41,11 +30,19 @@
     }
 }
 
-.checkbox__input:checked .checkbox__mark {
+.checkbox__input:checked +  .checkbox__mark {
 
     background-color: var(--bgc-btn-main);
+    
+}
+.checkbox__input:checked +  .checkbox__mark::before {
+    content: '';
+    width: 10px;
+    height: 8px;
+    background-image: url("../image/contacts-icon/vector.svg");
+    position: absolute;
+    top: 50%;
+    left: 50%;
 
-    .checkbox__mark::before {
-        opacity: 1;
-    }
+    transform: translate(-50%, -50%);
 }

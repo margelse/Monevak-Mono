@@ -45,7 +45,9 @@
                         <a href="tel:+7 (499) 136-17-18" class="header__number-link">+7 (499) 136-17-18</a>
                         <a href="mailto:info@monevac.ru" class="header__email-link">info@monevac.ru</a>
                     </div>
-                    <button class="header__btn btn-feedback">Оставить заявку</button>
+                    <div class="header__btn-wrapper">
+                        <button class="btn-feedback header__btn">Оставить заявку</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -123,11 +125,14 @@
                             <textarea rows="5" class="form__textarea" name="" id="" placeholder="Ваше сообщение"></textarea>
                         </div>
                         <div class="form__checkbox-wrap">
-                            <label class="checkbox" for="">
-                                <input class="checkbox__input" type="checkbox">
+                            <label class="checkbox" for="qwe">
+                                <input id="qwe" class="checkbox__input" type="checkbox">
                                 <span class="checkbox__mark"></span>
                                 <span class="checkbox__text">Я подтверждаю свое согласие с политикой в отношении <a href="!#">обработки персональных данных</a></span>
                             </label>
+                        </div>
+                        <div class="form__btn-wrapper">
+                            <button class="btn-feedback form__btn">Задать вопрос</button>
                         </div>
                     </form>
                 </div>
