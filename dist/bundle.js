@@ -1,0 +1,1 @@
+(()=>{"use strict";ymaps.ready((function(){var a=new ymaps.Map("map",{center:[52.925998,54.741348],zoom:7}),e=new ymaps.Placemark([52.925998,54.741348],{},{iconLayout:"default#image",iconImageHref:"./image/map-icons/map-point.svg",iconImageSize:[36,40],iconImageOffset:[0,0]});a.geoObjects.add(e)}))})();
