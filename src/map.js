@@ -3,7 +3,7 @@
 
 function init() {
     // Создание карты.
-    var myMap = new ymaps.Map("map", {
+    var map = new ymaps.Map("map", {
         // Координаты центра карты.
         // Порядок по умолчанию: «широта, долгота».
         // Чтобы не определять координаты центра карты вручную,
@@ -45,18 +45,18 @@ function init() {
         iconImageOffset: [0, 0]
     });
 
-    Map.controls.remove('');
-    Map.controls.remove('');
-    Map.controls.remove('');
-    Map.controls.remove('');
-    Map.controls.remove('');
-    Map.controls.remove('');
+    map.controls.remove('geolocationControl');
+    map.controls.remove('searchControl');
+    map.controls.remove('trafficControl');
+    map.controls.remove('typeSelector');
+    map.controls.remove('rulerControl');
+    map.behaviors.disable('scrollZoom');
 
-    myMap.geoObjects.add(myPlacemark1);
-    myMap.geoObjects.add(myPlacemark2);
-    myMap.geoObjects.add(myPlacemark3);
-    myMap.geoObjects.add(myPlacemark4);
-    myMap.geoObjects.add(myPlacemark5);
+    map.geoObjects.add(myPlacemark1);
+    map.geoObjects.add(myPlacemark2);
+    map.geoObjects.add(myPlacemark3);
+    map.geoObjects.add(myPlacemark4);
+    map.geoObjects.add(myPlacemark5);
 }
 
 

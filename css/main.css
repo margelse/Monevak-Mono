@@ -278,6 +278,19 @@ body {
   height: 600px;
 }
 
+[class*=cpoyrights-pane] {
+  opacity: 0;
+}
+
+[class*=gototech] {
+  display: none !important;
+}
+
+[class*=ground-pane] {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+
 .nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
