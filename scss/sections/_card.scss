@@ -1,0 +1,53 @@
+.card {
+    font-family: var(--font-family);
+    font-weight: 400;
+
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    grid-auto-flow: row;
+    gap: 30px;
+}
+.card__items {
+    padding: 33px 16px 40px 22px;
+
+    background-color: var(--bgc-btn-gray1);
+    border-radius: 20px;
+    height: 310px;
+
+    &:last-child {
+        grid-column: span 2;
+    }
+}
+.card__info {
+    margin-top: 15px;
+
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 28.5px;
+
+}
+.card__numbers-link {
+    font-size: 19px;
+    line-height: 28.5px;
+
+    color: var(--color-main);
+}
+.card__adress {
+    margin-top: 10px;
+
+    //styleName: Text_mob;
+    font-size: 14px;
+    line-height: 19.6px;
+
+    color: var(--color-second);
+}
+.card__adress-link {
+    color: var(--bgc-btn-main);
+}
+.card__work-time {
+    margin-top: 20px;
+
+    font-size: 14px;
+    line-height: 19.6px;
+    text-align: left;
+}
