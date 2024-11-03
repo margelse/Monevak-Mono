@@ -105,6 +105,8 @@ legend {
   --bgc-btn-hover: #CC2A3C;
   --bgc-btn-gray1: #F5F5F5;
   --bgc-line: #EAEAEA;
+  --bgc-footer-r: #222225;
+  --bgc-footer-l: #2a2a2e;
 }
 
 body {
@@ -214,11 +216,6 @@ body {
   margin-bottom: 17px;
 }
 
-.page-name__line {
-  height: 1px;
-  background-color: var(--bgc-line);
-}
-
 .page-name__title {
   margin-top: 15px;
 }
@@ -293,6 +290,102 @@ body {
 
 .location {
   margin-top: 81px;
+}
+
+.footer {
+  margin-top: 100px;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, var(--bgc-footer-r)), color-stop(50%, var(--bgc-footer-l)));
+  background-image: linear-gradient(to right, var(--bgc-footer-r) 50%, var(--bgc-footer-l) 50%);
+}
+
+.footer__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 63px;
+}
+
+.products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 11px;
+}
+
+.products__link {
+  font-family: var(--font-family);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 33.6px;
+  color: var(--color-white);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.products__link:hover {
+  color: var(--bgc-btn-main);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.footer__nav-link {
+  margin-top: 69px;
+}
+
+.footer-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 0 20px;
+  width: 488px;
+}
+
+.footer-nav__link {
+  font-family: var(--third-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28.8px;
+  color: var(--color-second);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.footer-nav__link:hover {
+  color: var(--color-white);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.footer__back-call {
+  padding-left: 127px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 61px;
+}
+
+.footer__connection {
+  font-family: var(--font-family);
+}
+.footer__connection p {
+  margin-top: 20px;
+}
+
+.third-title {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 39px;
+  color: var(--color-white);
+}
+
+.footer__mail {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 33.6px;
+  color: var(--bgc-btn-main);
 }
 
 .nav__list {
@@ -590,4 +683,12 @@ body {
   font-size: 14px;
   line-height: 19.6px;
   text-align: left;
+}
+
+.line {
+  height: 1px;
+}
+
+.page-name__line {
+  background-color: var(--bgc-line);
 }/*# sourceMappingURL=main.css.map */
