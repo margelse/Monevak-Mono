@@ -549,6 +549,12 @@ body {
   line-height: 46px;
   color: var(--color-main);
 }
+@media (max-width: 1289px) {
+  .page-title {
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
 
 .section-title {
   font-family: var(--second-family);

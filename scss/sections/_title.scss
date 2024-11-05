@@ -6,6 +6,11 @@
     line-height: 46px;
 
     color: var(--color-main);
+
+    @media (max-width: 1289px) {
+        font-size: 32px;
+        line-height: 32px;
+    }
 }
 .section-title {
     //h2
