@@ -5,6 +5,16 @@
 .nav__list {
     display: flex;
     gap: 46px;
+
+    & li:last-child {
+        @media (max-width: 1289px) {
+            display: none;
+        }
+    }
+
+    @media (max-width: 1289px) {
+        gap: 30px;
+    }
 }
 .nav__link {
     font-family: var(--font-family);

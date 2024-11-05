@@ -10,6 +10,10 @@
     display: flex;
     gap: 59px;
     align-items: center;
+
+    @media (max-width: 1289px) {
+        gap: 48px;
+    }
 }
 .header__mobile-nav {
     display: flex;
@@ -20,6 +24,18 @@
 
 .header__logo {
     justify-self: center;
+    @media (min-width: 1290px) {
+        display: block;
+    }
+    @media (max-width: 1289px) {
+        display: none;
+    }
+}
+.header__logo2 {
+    justify-self: end;
+    @media (max-width: 1289px) {
+        display: block;
+    }
 }
 .logo {
 }
@@ -28,6 +44,10 @@
     display: flex;
     gap: 58px;
     align-items: center;
+
+    @media (max-width: 1289px) {
+        gap: 48px;
+    }
 }
 .header__icons {
     display: flex;
@@ -54,4 +74,9 @@
     line-height: 15.6px;
 
     color: var(--color-second);
+}
+.header__btn-wrapper {
+    @media (max-width: 1289px) {
+        display: none;
+    }
 }
