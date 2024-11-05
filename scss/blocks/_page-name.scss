@@ -7,11 +7,14 @@
     text-align: center;
 
     background-color: var(--bgc-btn-gray1);
+
 }
 .page-name__route {
     display: flex;
     justify-content: center;
     margin-bottom: 17px;
+    padding-bottom: 25px;
+    border-bottom: solid 1px var(--bgc-line);
 }
 
 .page-name__title {

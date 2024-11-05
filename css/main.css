@@ -105,6 +105,7 @@ legend {
   --bgc-btn-hover: #CC2A3C;
   --bgc-btn-gray1: #F5F5F5;
   --bgc-line: #EAEAEA;
+  --bc-line: #494950;
   --bgc-footer-r: #222225;
   --bgc-footer-l: #2a2a2e;
 }
@@ -214,6 +215,8 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 17px;
+  padding-bottom: 25px;
+  border-bottom: solid 1px var(--bgc-line);
 }
 
 .page-name__title {
@@ -359,12 +362,18 @@ body {
   transition: 0.3s;
 }
 
-.footer__back-call {
+.footer__info {
   padding-left: 127px;
+}
+
+.footer__back-call {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 61px;
+  gap: 15px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .footer__connection {
@@ -386,6 +395,42 @@ body {
   font-weight: 400;
   line-height: 33.6px;
   color: var(--bgc-btn-main);
+}
+
+.footer__adress {
+  margin-top: 97px;
+  font-family: var(--third-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.8px;
+  color: var(--color-white);
+}
+
+.footer__bottom {
+  margin-top: 43px;
+  border-top: solid 1px var(--color-white);
+}
+
+.footer__bottom-wrapper {
+  padding: 22px 0 23px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-family: var(--third-family);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 14.3px;
+  color: var(--color-second);
+}
+.footer__bottom-wrapper p:nth-child(2) {
+  padding-left: 127px;
+}
+
+.rights {
+  color: var(--color-second);
+}
+
+.left {
+  color: var(--color-white);
 }
 
 .nav__list {
@@ -426,6 +471,26 @@ body {
 
 .form__btn {
   padding: 19px 36px;
+}
+
+.btn {
+  padding: 19px 27px;
+  border-radius: 14px;
+  border: solid 2px var(--bc-line);
+  font-family: var(--second-family);
+  color: var(--color-white);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.footer-btn:hover {
+  background-color: var(--bgc-btn-hover);
+  border-color: var(--bgc-btn-hover);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .page-title {
@@ -683,12 +748,4 @@ body {
   font-size: 14px;
   line-height: 19.6px;
   text-align: left;
-}
-
-.line {
-  height: 1px;
-}
-
-.page-name__line {
-  background-color: var(--bgc-line);
 }/*# sourceMappingURL=main.css.map */

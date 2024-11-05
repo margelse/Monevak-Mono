@@ -53,8 +53,8 @@
         </div>
     </header>
     <section class="page-name">
-        <div class="container">
-            <div class="page-name__content">
+        <div class="page-name__content">
+            <div class="container">
                 <div class="page-name__route">
                     <ol class="route">
                         <li>
@@ -115,18 +115,18 @@
                     <form action="" class="form">
                         <div class="form__input-group">
                             <div class="form__item">
-                                <input class="form__input" type="text" placeholder="Ваше имя">
+                                <input class="form__input" type="text" placeholder="Ваше имя" required>
                             </div>
                             <div class="form__item">
-                                <input class="form__input" type="text" placeholder="Ваш телефон">
+                                <input class="form__input" type="text" placeholder="Ваш телефон" required>
                             </div>
                         </div>
                         <div class="form__item">
-                            <textarea rows="5" class="form__textarea" name="" id="" placeholder="Ваше сообщение"></textarea>
+                            <textarea rows="5" class="form__textarea" name="" id="" placeholder="Ваше сообщение" required></textarea>
                         </div>
                         <div class="form__checkbox-wrap">
                             <label class="checkbox" for="qwe">
-                                <input id="qwe" class="checkbox__input" type="checkbox">
+                                <input id="qwe" class="checkbox__input" type="checkbox" required>
                                 <span class="checkbox__mark"></span>
                                 <span class="checkbox__text">Я подтверждаю свое согласие с политикой в отношении <a href="!#">обработки персональных данных</a></span>
                             </label>
@@ -309,8 +309,10 @@
         </div>
         <div class="footer__bottom">
             <div class="container">
-                <p><a href="!#" class="rights">© Моневак 2020 | Все права защищены</a></p>
-                <p>Разработка и продвижение сайта - <a href="!#" class="rights">TODO</a></p>
+                <div class="footer__bottom-wrapper">
+                    <p><a href="!#" class="rights">© Моневак 2020 | Все права защищены</a></p>
+                    <p>Разработка и продвижение сайта - <a href="!#" class="left">TODO</a></p>
+                </div>
             </div>
         </div>
     </footer>

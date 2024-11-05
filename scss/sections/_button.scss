@@ -22,3 +22,22 @@
 .form__btn {
     padding: 19px 36px;
 }
+
+.btn {
+    padding: 19px 27px;
+    border-radius: 14px;
+    border: solid 2px var(--bc-line);
+
+    font-family: var(--second-family);
+    color: var(--color-white);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+
+    transition: 0.3s;
+}
+.footer-btn:hover {
+    background-color: var(--bgc-btn-hover);
+    border-color: var(--bgc-btn-hover);
+    transition: 0.3s;
+}
