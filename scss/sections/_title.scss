@@ -18,6 +18,12 @@
     font-size: 36px;
     font-weight: 400;
     line-height: 39.6px;
+
+    @media (max-width: 1289px) {
+        //styleName: H2_tablet;
+        font-size: 28px;
+        line-height: 33.6px;
+    }
 }
 
 .card-title {

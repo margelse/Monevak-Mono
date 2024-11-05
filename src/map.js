@@ -1,6 +1,30 @@
 // Функция ymaps.ready() будет вызвана, когда
 // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
 
+
+function centerMap() {
+    const viewportWidth = window.innerWidth;
+    if (viewportWidth >= 768 && viewportWidth < 1280) {
+        return [53.2001, 50.15];
+    }
+    if (viewportWidth >= 1280) {
+        return [52.925998, 54.741348];
+    }
+    if (viewportWidth < 768) {
+        return [53.2001, 50.15];
+    }
+}
+
+function zoom() {
+    const viewportWidth = window.innerWidth;
+    if (viewportWidth < 768) {
+        return 4;
+    }
+    else {
+        return 5;
+    }
+}
+
 function init() {
     // Создание карты.
     var map = new ymaps.Map("map", {
@@ -8,10 +32,10 @@ function init() {
         // Порядок по умолчанию: «широта, долгота».
         // Чтобы не определять координаты центра карты вручную,
         // воспользуйтесь инструментом Определение координат.
-        center: [52.925998, 54.741348],
+        center: centerMap(),
         // Уровень масштабирования. Допустимые значения:
         // от 0 (весь мир) до 19.
-        zoom: 5
+        zoom: zoom()
     });
 
     var myPlacemark1 = new ymaps.Placemark([55.637576, 51.819712], {}, {

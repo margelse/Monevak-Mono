@@ -4,6 +4,10 @@
 .info__content {
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 1289px) {
+        gap: 71px;
+    }
 }
 .info__text a {
     color: var(--color-main);
