@@ -1,11 +1,18 @@
 .card {
-    font-family: var(--font-family);
-    font-weight: 400;
-
     display: grid;
     grid-template-columns: repeat(4, 300px);
     grid-auto-flow: row;
     gap: 30px;
+    font-family: var(--font-family);
+    font-weight: 400;
+
+
+    @media (max-width: 1289px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
 }
 .card__items {
     padding: 33px 16px 40px 22px;
@@ -13,10 +20,25 @@
     background-color: var(--bgc-btn-gray1);
     border-radius: 20px;
     height: 310px;
-
+    @media (max-width: 1289px) {
+        width: 350px;
+    }
+    //width: 350px;
     &:last-child {
         grid-column: span 2;
+
+        @media (max-width: 1289px) {
+            width: 710px;
+        }
+        @media (max-width: 767px) {
+            height: 395px;
+            width: 288px;
+        }
     }
+    @media (max-width: 767px) {
+        width: 288px;
+    }
+
 }
 .card__info {
     margin-top: 15px;
